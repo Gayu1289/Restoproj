@@ -1,0 +1,19 @@
+<p>user-register works!</p>
+<p>user-register works!</p>
+<P>USER NAME IS : {{ name }}</P>
+<BUTTON (click)="UpdateName()">click me!</BUTTON>
+
+<div *ngFor ="let employee of employees; let i = index">
+    <p>NAME:{{employee.name}}</p>
+
+    <p>Age: {{employee.age}}</p>
+
+    <p>Salary: {{employee.salary}}</p>
+
+    <button (click)="toggleVisibility(i)">toggle visibility</button>
+</div>
+
+<!--div>
+    <input placeholder="Enter your name" [(ngModel)]="username" />
+    <p>Hello {{ username }}</p>
+</div>-->
