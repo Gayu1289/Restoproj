@@ -1,0 +1,16 @@
+<div *ngIf="restaurant; else noSelection" class="detail-container">
+  <h2>{{ restaurant.name }}</h2>
+  <img [src]="restaurant.imageUrl" alt="{{ restaurant.name }}" width="300">
+
+  <p><strong>Location:</strong> {{ restaurant.location }}</p>
+  <p><strong>Rating:</strong> ⭐ {{ restaurant.rating }}</p>
+  <p><strong>Price:</strong> {{ restaurant.price }}</p>
+  <p><strong>Hours:</strong> {{ restaurant.hours }}</p>
+</div>
+
+<ng-template #noSelection>
+  <p>Please select a restaurant from the list.</p>
+</ng-template>
+<ng-template #notFound>
+  <p>Restaurant not found!</p>
+</ng-template>

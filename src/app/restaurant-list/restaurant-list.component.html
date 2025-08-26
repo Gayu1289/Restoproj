@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="restaurant-card" *ngFor="let r of restaurants">
+    <a [routerLink]="['/restaurant', r.id]" (click)="onSelectRestaurant(r)">
+      <img [src]="r.imageUrl" alt="{{ r.name }}">
+      <div class="restaurant-info">
+        <h3>{{ r.name }}</h3>
+        <p>{{ r.location }}</p>
+        <p class="highlight">⭐ {{ r.rating }}</p>
+        <p>{{ r.price }}</p>
+        <p>{{ r.hours }}</p>
+      </div>
+    </a>
+  </div>
+</div>

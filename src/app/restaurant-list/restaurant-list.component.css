@@ -1,0 +1,54 @@
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 15px;
+}
+
+/* Each restaurant card in list format */
+.restaurant-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Restaurant image small on left */
+.restaurant-card img {
+  width: 500px;
+  height: 180px;
+  object-fit: cover;
+  border-right: 1px solid #eee;
+}
+
+/* Restaurant info on right */
+.restaurant-info {
+  padding: 10px 15px;
+  flex: 1;
+}
+
+.restaurant-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.restaurant-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #464141;
+}
+
+.restaurant-info .highlight {
+  font-weight: bold;
+  color: hsl(4, 88%, 52%);
+}

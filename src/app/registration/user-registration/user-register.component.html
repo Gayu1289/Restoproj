@@ -1,0 +1,28 @@
+
+<p>User name is : {{ name }}</p>
+<button (click)="updateName()">Click Me!</button>
+
+<!-- <img [src]="imgUrl" /> -->
+
+
+<div *ngFor = "let employee of employees; let i = index;">
+    <app-employee [employee] = "employee" (visibilityEvent)="receiveEvent(employee)"></app-employee>
+</div>
+
+<div>
+    <input [(ngModel)]="username" placeholder="Enter your name" />
+    <p>Hello! {{ username }}</p>
+</div>
+
+<p>Current Random Number: {{currentNumberReceiver}}</p>
+<button (click)="updateRandomNumber()">Update Value</button>
+
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)" class="register-form">
+    <label for="name">Name :</label>
+    <input type="text" id="name" [(ngModel)] = "user.name" #name="ngModel" required name="name">
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" [(ngModel)] = "user.email" #email="ngModel" required name="email">
+
+    <button type="submit">Register</button>
+</form>
