@@ -1,4 +1,6 @@
 <div class="container">
+  <h1>Pune Restaurants</h1>
+
   <div class="restaurant-card" *ngFor="let r of restaurants">
     <a [routerLink]="['/restaurant', r.id]" (click)="onSelectRestaurant(r)">
       <img [src]="r.imageUrl" alt="{{ r.name }}">

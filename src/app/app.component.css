@@ -1,4 +1,24 @@
 
-p {
-    color: blue;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e96d3c;
+  padding: 10px 20px;
+  color: white;
+}
+
+.nav-right a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-right a:hover {
+  text-decoration: underline;
+  color: #7a1604;
+}
+.page-container {
+  padding: 20px; /* it is use to add padding around the content so that the content will not got a the corner of the page*/
 }

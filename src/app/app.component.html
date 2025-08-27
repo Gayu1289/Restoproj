@@ -1,17 +1,19 @@
-<h1>Navigate Components</h1>
-<h1>My Pune Restaurants</h1>
+<h1 class="title">Restaurant Management System</h1>
+<nav class="navbar">
+   
+    <div class="nav-right">
+    <a routerLink="/home" >Home</a>
+    <a routerLink="/register/user" >User Registration</a>
+    <a routerLink="/register/business" >Business Registration</a>
+    <a routerLink="/restaurants">Restaurant List</a>
+    <a routerLink="/booking">Booking</a>
 
-<nav>
-    <ul>
-        <li><a routerLink="/register/user">User Registration</a></li>
-        <li><a routerLink="/register/business">Business Registration</a></li>
-        <li><a routerLink="/booking">Booking</a></li>
-        <li><a routerLink="/restaurants">View Restaurant List</a></li>
-        
-      </ul>
+  </div>
 </nav>
 
 <!-- <app-user-register></app-user-register>
 
 <app-book-table></app-book-table> -->
-<router-outlet></router-outlet>
+<div class="page-container">
+  <router-outlet></router-outlet>
+</div>
